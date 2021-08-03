@@ -10,6 +10,7 @@ app = Flask(__name__)
 def calcularor():
     return render_template('calculator.html')
 
+
 @app.route('/',methods=['POST'])
 def hello():
     x=request.form['x']
